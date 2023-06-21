@@ -1,0 +1,137 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --bs-primary-rgb: 56,62,147;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #383e93;
+  --bs-btn-border-color: #383e93;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #383e93;
+  --bs-btn-disabled-border-color: #383e93;
+
+}
+ body {
+   font-family: 'Roboto', sans-serif;
+ }
+
+ .table {
+   margin: 20px;
+ }
+
+ .table thead th {
+   background-color: #f8f9fa;
+   border-color: #dee2e6;
+   color: #212529;
+ }
+
+ .table tbody td {
+   border-color: #dee2e6;
+ }
+
+ .table tbody tr:nth-child(even) {
+   background-color: #f8f9fa;
+ }
+
+ .table-striped tbody tr:nth-of-type(odd) {
+   background-color: #e9ecef;
+ }
+
+ @media (max-width: 767px) {
+   .table-responsive {
+     display: block;
+     width: 100%;
+     overflow-x: auto;
+     -webkit-overflow-scrolling: touch;
+     -ms-overflow-style: -ms-autohiding-scrollbar;
+   }
+
+   .table-responsive.table {
+     width: auto;
+     min-height: 0.01%;
+     overflow-x: initial;
+     -webkit-overflow-scrolling: initial;
+     -ms-overflow-style: initial;
+   }
+
+   .table-responsive.table > thead > tr > th,
+   .table-responsive.table > tbody > tr > th,
+   .table-responsive.table > tfoot > tr > th,
+   .table-responsive.table > thead > tr > td,
+   .table-responsive.table > tbody > tr > td,
+   .table-responsive.table > tfoot > tr > td {
+     white-space: nowrap;
+   }
+ }
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    justify-content: center;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer .container {
+  max-width: 800px;
+}
+
+.footer .text-muted {
+  font-size: 14px;
+}

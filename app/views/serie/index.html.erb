@@ -1,0 +1,22 @@
+<h1 class="text-center">SERIES</h1>
+<%= link_to "Agregar Nueva Serie", "/serie/new", class:"btn btn-primary"%>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Synopsis</th>
+        <th>Director</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @series.each do |serie| %>
+        <tr>
+          <td><%= serie.name %></td>
+          <td><%= serie.synopsis %></td>
+          <td><%= serie.director %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

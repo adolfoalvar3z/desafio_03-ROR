@@ -1,0 +1,22 @@
+  <h1 class="text-center">DOCUMENTARIES</h1>
+  <%= link_to "Agregar Nueva Documental", "/documentary_film/new", class:"btn btn-primary"%>
+  <div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Synopsis</th>
+        <th>Director</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @documentaryFilms.each do |documentaryFilm| %>
+      <tr>
+        <td><%= documentaryFilm.name %></td>
+        <td><%= documentaryFilm.synopsis %></td>
+        <td><%= documentaryFilm.director %></td>
+      </tr>
+        <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,23 @@
+
+<h1 class="text-center">MOVIES</h1>
+<%= link_to "Agregar Nueva Movie", "/movie/new", class:"btn btn-primary"%>
+<div class="table-responsive">
+  <table class="table table-striped table-responsive">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Synopsis</th>
+        <th>Director</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @movies.each do |movie| %>
+        <tr>
+          <td><%= movie.name %></td>
+          <td><%= movie.synopsis %></td>
+          <td><%= movie.director %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
